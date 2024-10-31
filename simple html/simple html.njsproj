@@ -29,6 +29,9 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="css\reset.css">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="fonts\DMSans-Black.ttf" />
     <Content Include="fonts\DMSans-BlackItalic.ttf" />
     <Content Include="fonts\DMSans-Bold.ttf" />
@@ -117,8 +120,8 @@
     <Content Include="img\logo3.png" />
     <Content Include="img\logo4.png" />
     <Content Include="img\logo5.png" />
-    <Content Include="img\negr1.png" />
-    <Content Include="img\negr2.png" />
+    <Content Include="img\person1.png" />
+    <Content Include="img\person2.png" />
     <Content Include="img\nextLine.png" />
     <Content Include="img\right_arrow.png" />
     <Content Include="img\social_logo1.png" />

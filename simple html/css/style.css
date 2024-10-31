@@ -1,5 +1,6 @@
 body {
-    margin: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
     background-color: #191919;
     text-decoration: none;
     color: white;
@@ -20,18 +21,15 @@ li {
 
 ul {
     display: flex;
-    padding: 0px;
-    margin: 30px;
+    padding-top: 30px;
 }
 
 div {
-    margin-left: 30px;
     display: block;
     height: max-content;
 }
 
 article {
-    margin-left: 30px;
     display: block;
     height: max-content;
 }
@@ -46,91 +44,93 @@ a {
     color: inherit;
 }
 
-nav {
-    margin-left: 0px;
-}
-
 h1 {
     font-weight: 400;
 }
 
 @font-face {
     font-family: "Dm sans";
+    font-weight: normal;
     src: url("../fonts/DMSans-Medium.ttf");
 }
 
-.header_container {
+@font-face {
+    font-family: "Dm sans";
+    font-weight: bold;
+    src: url("../fonts/DMSans-Bold.ttf");
+}
+
+.header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 10px;
-    margin-left: 40px;
+    padding-top: 10px;
 }
 
-.header_list {
+.header-container_nav {
     display: flex;
-    margin-right: 60px;
     width: 100% 100%;
 }
 
-.header_list_element:hover {
+.header-container_nav > *:hover {
     color: #118DA8;
 }
 
-.header_list_element {
-    padding: 0px 15px 0px 15px;
+.header-container_nav > * {
+    padding-left: 30px;
     font-size: 17px;
     font-family: 'Dm sans';
 }
 
-.negr1_container {
+.person1 {
     display: flex;
     align-items: flex-end;
-    margin-top: 40px;
+    padding-top: 40px;
 }
 
-.negr1_text {
+.person1_header {
     font-size: 70px;
     font-weight: normal;
 }
 
-.negr1_content_container {
+.person1_content {
     align-content: center;
-}
-
-.negr1_text_container {
-    align-self: end;
+    padding-left: 60px;
     width: 65%;
 }
 
-.negr1_listen_container {
-    margin-top: 100px;
-    margin-bottom: 130px;
-    align-self: end;
+.person1_content > div {
+    width: 65%;
 }
 
-.negr1_next_word {
+.person1_listen-on-container {
+    padding-top: 100px;
+    padding-bottom: 130px;
+}
+
+.person1_next-word {
     background-image: url(../img/nextLine.png);
     background-repeat: no-repeat;
     background-position: bottom;
 }
 
-.negr1_links {
+.person1_level-word {
+    font-weight: 700;
+}
+
+.listen-on-links {
     justify-content: left;
-    padding: 0px;
-    margin-left: 0px;
 }
 
-.listen_on_link {
-    margin-right: 5px;
-    margin-left: 0px;
+.listen-on-links > *{
+    margin-right: 17px;
 }
 
-.negr1_listen_on_caption {
+.person1_listen-on-caption {
     font-size: 15px;
 }
 
-.negr1_pic_container {
+.person1_pictures {
     position: relative;
 }
 
@@ -152,25 +152,18 @@ h1 {
     top: -20px;
 }
 
-.ep_header {
-    display: flex;
-    justify-content: space-between;
-}
-
-.ep_caption {
+.episode_caption {
     font-size: 64px;
     font-weight: 400;
     letter-spacing: 4px;
 }
 
-.all_ep_button {
+.episode_button {
     width: 178px;
     height: 51px;
     border-radius: 6px;
     align-self: center;
     font-size: 17px;
-    margin-right: 6%;
-    padding: 0px;
 }
 
 .episode {
@@ -178,76 +171,68 @@ h1 {
     height: fit-content;
     background-color: black;
     border-radius: 32px;
-    margin-right: 6%;
     margin-bottom: 50px;
-    margin-left: 30px;
 }
 
-.ep_img {
+.episode_img {
     margin: 30px 0px 30px 30px;
     width: 389px;
     height: 465px;
 }
 
-.ep_info {
+.episode_info {
     display: grid;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+    margin: 0px;
+    height: 465px;
+    align-content: space-between;
 }
 
-.ep_tag {
+.episode_tag {
     font-size: 18px;
     background-color: #191919;
     border-radius: 6px;
-    width: 73px;
     height: 27px;
-}
-
-.ep_tag2 {
     width: max-content;
     padding: 0 15px 0 15px;
 }
 
-.ep_number {
+.episode_number {
     color: #118DA8;
     font-size: 17px;
     margin-top: 50px;
 }
 
-.ep_h1 {
-    font-size: 64px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    width: 80%;
+.episodes-header-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding: 100px 6% 50px 0px;
 }
 
-.ep_description {
-    width: 80%;
+.episodes-header-container_header {
+    font-size: 64px;
+    width: 70%;
+}
+
+.episode_description {
+    width: 85%;
     font-size: 22px;
     opacity: 70%;
 }
 
-.ep_details {
-    margin: 20px 0 0 0;
-}
-
-.negr2_container {
+.person2 {
     display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    margin-top: 250px;
+    padding-top: 250px;
 }
 
-.negr2_img_container {
-    margin-right: 6%;
-}
-
-.negr2_content {
+.person2_content {
     display: grid;
     align-self: center;
 }
 
-.negr2_button {
+.person2_button {
     width: 112px;
     height: 112px;
     border-radius: 400px;
@@ -255,47 +240,42 @@ h1 {
     background-position: center;
 }
 
-.negr2_description {
+.person2_button-text {
     color: #118DA8;
     font-size: 18px;
     margin-top: 15px;
 }
 
-.negr2_name {
+.person2_header {
     font-size: 65px;
     margin-top: 15px;
 }
 
-.negr2_main_content {
+.person2_description {
     font-size: 22px;
     opacity: 70%;
     margin-top: 35px;
     width: 85%;
 }
 
-.subscribe_form_container {
+.subscribe-container {
     background-color: black;
     border-radius: 32px;
     display: flex;
     justify-content: space-between;
-    margin: 200px 6% 0 60px;
+    margin: 200px 0 0 0;
+    padding: 60px;
 }
 
-.subscribe_head {
+.subscribe-container_email-text {
     color: #118DA8;
     font-size: 18px;
-    margin-top: 50px;
 }
 
-.subscribe_text {
+.subscribe-container_subscribe-header {
     font-size: 72px;
     width: 80%;
     margin-top: 20px;
-}
-
-.input_form {
-    align-content: center;
-    margin-right: 50px;
 }
 
 input {
@@ -309,6 +289,7 @@ input {
     font-size: 24px;
     padding-left: 14px;
     cursor: pointer;
+    opacity: 70%;
 }
 
 .input_name {
@@ -334,8 +315,8 @@ input {
     padding: 0px;
 }
 
-.star_img {
-    margin-right: 4px;
+.comment_rating img {
+    padding-right: 4px;
 }
 
 .comment_content {
@@ -350,17 +331,18 @@ input {
     font-size: 24px;
 }
 
-.comments_section {
+.comments-section {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 200px;
+    padding-top: 200px;
+    justify-content: space-between;
 }
 
 .comment {
-    width: 27.38%;
+    width: 423px;
     background-color: black;
     border-radius: 32px;
-    margin: 0 0 60px 60px;
+    margin-bottom: 60px;
     height: 328px;
 }
 
@@ -368,31 +350,20 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
+    padding-right: 150px;
 }
 
-.logo_pic {
-    margin-left: 30px;
-}
-
-.social_logo {
+.social-logos > * {
     margin-right: 8px;
     cursor: pointer;
 }
 
-.nav_links > a {
+.nav-links > a {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 17px;
 }
 
-.nav_links {
-    margin-left: 250px;
-}
-
-.nav_links2 {
-    margin-left: 150px;
-}
-
-.footer_links {
-    margin-right: 22%;
+.nav-links {
+    padding-left: 150px;
 }
