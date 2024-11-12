@@ -9,20 +9,20 @@
 <body>
     <header>
         <div class="header-container">
-            <img src="../img/headerLogo.png" />
+            <img class="header-logo" src="../img/headerLogo.png" />
             <nav>
-                <ul class="header-container_nav">
+                <ul class="header-container__nav ul">
                     <li>
-                        <a href="">Home</a>
+                        <a class="a" href="">Home</a>
                     </li>
                     <li>
-                        <a href="">Episodes</a>
+                        <a class="a" href="">Episodes</a>
                     </li>
                     <li>
-                        <a href="">About</a>
+                        <a class="a" href="">About</a>
                     </li>
                     <li>
-                        <a href="">Contact</a>
+                        <a class="a" href="">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -31,47 +31,47 @@
 
     <main>
         <section class="person1">
-            <div class="person1_pictures">
-                <img src="../img/line1.png" class="line1"/>
-                <img src="../img/line2.png" class="line2"/>
-                <img src="../img/line3.png" class="line3"/>
-                <img src="../img/person1.png" />
+            <div class="person1__pictures">
+                <img src="../img/line1.png" class="line1 img"/>
+                <img src="../img/line2.png" class="line2 img"/>
+                <img src="../img/line3.png" class="line3 img"/>
+                <img class="img" src="../img/person1.png" />
             </div>
-            <div class="person1_content">
+            <div class="person1__content">
                 <div>
-                    <h1 class="person1_header">
+                    <h1 class="person1__header h1">
                         Take your podcast to the
-                        <span class="person1_next-word">next</span>
-                        <b class="person1_level-word">level</b>
+                        <span class="person1__next-word">next</span>
+                        <span class="person1__level-word">level</span>
                     </h1>
                 </div>
 
-                <div class="person1_listen-on-container">
-                    <span class="person1_listen-on-caption">Listen on</span>
-                    <ul class="listen-on-links">
+                <div class="listen-on-container">
+                    <p class="listen-on-container__caption">Listen on</p>
+                    <ul class="listen-on-links ul">
                         <li>
-                            <a href="">
-                                <img src="../img/logo1.png" />
+                            <a class="a" href="">
+                                <img class="img"  src="../img/logo1.png" />
                             </a>
                         </li>
                         <li>
-                            <a href="">
-                                <img src="../img/logo2.png" />
+                            <a class="a" href="">
+                                <img class="img"  src="../img/logo2.png" />
                             </a>
                         </li>
                         <li>
-                            <a href="">
-                                <img src="../img/logo3.png" />
+                            <a class="a" href="">
+                                <img class="img"  src="../img/logo3.png" />
                             </a>
                         </li>
                         <li>
-                            <a href="">
-                                <img src="../img/logo4.png" />
+                            <a class="a" href="">
+                                <img class="img"  src="../img/logo4.png" />
                             </a>
                         </li>
                         <li>
-                            <a href="">
-                                <img src="../img/logo5.png" />
+                            <a class="a" href="">
+                                <img class="img"  src="../img/logo5.png" />
                             </a>
                         </li>
                     </ul>
@@ -79,84 +79,86 @@
             </div>
         </section>
 
-        <section>
+        <section class="episodes">
             <div class="episodes-header-container">
-                <h1 class="episodes-header-container_header">
+                <h1 class="episodes-header-container__header h1">
                     Latest episodes
                 </h1>
-                <button class="episode_button">View all episodes</button>
+                <button class="episode-button button">View all episodes</button>
             </div>
 
-            <article class="episode">
-                <img src="../img/ep1.png" class="episode_img ep1_image" />
-                <div class="episode_info">
-                    <button class="episode_tag">
-                        Gear
-                    </button>
-                    <p class="episode_number">
-                        Episode 3
-                    </p>
-                    <h1 class="episodes-header-container_header">
-                        Should you get outboard audio gear?
-                    </h1>
-                    <p class="episode_description">
-                        Is hardware really worth it when it comes to podcasting? The answer is...it depends. Here’s our reasons on why you might want to consider picking something up.
-                    </p>
-                    <button class="episode_button">
-                        View episode details
-                    </button>
-                </div>
-            </article>
+            <div class="episodes__container">
+                <article class="episode article">
+                    <img src="../img/ep1.png" class="episode__img ep1__image img" />
+                    <div class="episode__info">
+                        <button class="episode-tag button">
+                            Gear
+                        </button>
+                        <p class="episode__number">
+                            Episode 3
+                        </p>
+                        <h1 class="episode__header h1">
+                            Should you get outboard audio gear?
+                        </h1>
+                        <p class="episode__description">
+                            Is hardware really worth it when it comes to podcasting? The answer is...it depends. Here’s our reasons on why you might want to consider picking something up.
+                        </p>
+                        <button class="episode-button button">
+                            View episode details
+                        </button>
+                    </div>
+                </article>
 
-            <article class="episode">
-                <img src="../img/ep2.png" class="episode_img" />
-                <div class="episode_info">
-                    <button class="episode_tag">
-                        Tips & Tricks
-                    </button>
-                    <p class="episode_number">
-                        Episode 2
-                    </p>
-                    <h1 class="episodes-header-container_header">
-                        Mic tricks to take you to the next level
-                    </h1>
-                    <p class="episode_description">
-                        Stop rolling with those default settings on your mic. These small tweaks will take you from sounding good to great.
-                    </p>
-                    <button class="episode_button">
-                        View episode details
-                    </button>
-                </div>
-            </article>
+                <article class="episode article">
+                    <img src="../img/ep2.png" class="episode__img img" />
+                    <div class="episode__info">
+                        <button class="episode-tag button">
+                            Tips & Tricks
+                        </button>
+                        <p class="episode__number">
+                            Episode 2
+                        </p>
+                        <h1 class="episode__header h1">
+                            Mic tricks to take you to the next level
+                        </h1>
+                        <p class="episode__description">
+                            Stop rolling with those default settings on your mic. These small tweaks will take you from sounding good to great.
+                        </p>
+                        <button class="episode-button button">
+                            View episode details
+                        </button>
+                    </div>
+                </article>
 
-            <article class="episode">
-                <img src="../img/ep3.png" class="episode_img" />
-                <div class="episode_info">
-                    <button class="episode_tag">
-                        Gear
-                    </button>
-                    <p class="episode_number">
-                        Episode 1
-                    </p>
-                    <h1 class="episodes-header-container_header">
-                        The best microphone under $200
-                    </h1>
-                    <p class="episode_description">
-                        With so many microphones on the market, how are you supposed to know what’s the best? Take a look at our top picks.
-                    </p>
-                    <button class="episode_button">
-                        View episode details
-                    </button>
-                </div>
-            </article>
+                <article class="episode article">
+                    <img src="../img/ep3.png" class="episode__img img" />
+                    <div class="episode__info">
+                        <button class="episode-tag button">
+                            Gear
+                        </button>
+                        <p class="episode__number">
+                            Episode 1
+                        </p>
+                        <h1 class="episode__header h1">
+                            The best microphone under $200
+                        </h1>
+                        <p class="episode__description">
+                            With so many microphones on the market, how are you supposed to know what’s the best? Take a look at our top picks.
+                        </p>
+                        <button class="episode-button button">
+                            View episode details
+                        </button>
+                    </div>
+                </article>
+            </div>
         </section>
 
         <section class="person2">
-            <div class="person2_content">
-                <button class="person2_button"></button>
-                <span class="person2_button-text">Meet your host</span>
-                <h1 class="person2_header">Jacob Paulaner</h1>
-                <span class="person2_description">
+            <div class="person2__content">
+                <button class="meet-button button"></button>
+                <span class="meet-button__text">Meet your host</span>
+                <h1 class="person2__header h1">Jacob Paulaner</h1>
+                <span class="person2__description">
                     Jacob has a background in audio engineering, and has been podcasting since the early days.
                     <br />
                     <br />
@@ -164,147 +166,149 @@
                 </span>
             </div>
 
-            <img src="../img/person2.png"/>
+            <img class="img"  src="../img/person2.png"/>
         </section>
 
-        <section class="subscribe-container">
-            <div>
-                <p class="subscribe-container_email-text">Email Newsletter</p>
-                <h1 class="subscribe-container_subscribe-header">Subscribe for updates</h1>
-            </div>
+        <div class="subscribe-section__container">
+            <section class="subscribe-section">
+                <div>
+                    <p class="subscribe-section__email-text">Email Newsletter</p>
+                    <h1 class="subscribe-section__subscribe-header h1">Subscribe for updates</h1>
+                </div>
 
-            <form>
-                <input type="text" class="input_name" value="Name"/>
-                <input type="email" class="input_email" value="Email"/>
-                <input type="submit" class="input_submit" value="Submit"/>
-            </form>
-        </section>
+                <form class="input">
+                    <input type="text" class="input__name subscribe__input" value="Name" />
+                    <input type="email" class="input__email subscribe__input" value="Email" />
+                    <input type="submit" class="input__submit subscribe__input" value="Submit" />
+                </form>
+            </section>
+        </div>
 
         <section class="comments-section">
-            <article class="comment">
-                <ul class="comment_rating">
-                    <li><img src="../img/star.png"/></li>
-                    <li><img src="../img/star.png"/></li>
-                    <li><img src="../img/star.png"/></li>
-                    <li><img src="../img/star.png"/></li>
-                    <li><img src="../img/star.png"/></li>
+            <article class="comment article">
+                <ul class="rating ul">
+                    <li><img class="img" src="../img/star.png" /></li>
+                    <li><img class="img" src="../img/star.png" /></li>
+                    <li><img class="img" src="../img/star.png" /></li>
+                    <li><img class="img" src="../img/star.png" /></li>
+                    <li><img class="img" src="../img/star.png" /></li>
                 </ul>
-                <p class="comment_content">I can’t recommend this podcast enough</p>
-                <p class="comment_author">Betty Lacey</p>
+                <p class="comment__content">I can’t recommend this podcast enough</p>
+                <p class="comment__author">Betty Lacey</p>
             </article>
 
-            <article class="comment">
-                <ul class="comment_rating">
-                    <li><img src="../img/star.png"/></li>
-                    <li><img src="../img/star.png"/></li>
-                    <li><img src="../img/star.png"/></li>
-                    <li><img src="../img/star.png"/></li>
-                    <li><img src="../img/star.png"/></li>
+            <article class="comment article">
+                <ul class="rating ul">
+                    <li><img class="img"  src="../img/star.png"/></li>
+                    <li><img class="img"  src="../img/star.png"/></li>
+                    <li><img class="img"  src="../img/star.png"/></li>
+                    <li><img class="img"  src="../img/star.png"/></li>
+                    <li><img class="img"  src="../img/star.png"/></li>
                 </ul>
-                <p class="comment_content">Jacob is the best in the business</p>
-                <p class="comment_author">Adam Driver</p>
+                <p class="comment__content">Jacob is the best in the business</p>
+                <p class="comment__author">Adam Driver</p>
             </article>
 
-            <article class="comment">
-                <ul class="comment_rating">
-                    <li><img src="../img/star.png" /></li>
-                    <li><img src="../img/star.png" /></li>
-                    <li><img src="../img/star.png" /></li>
-                    <li><img src="../img/star.png" /></li>
-                    <li><img src="../img/star.png" /></li>
+            <article class="comment article">
+                <ul class="rating ul">
+                    <li><img class="img"  src="../img/star.png" /></li>
+                    <li><img class="img"  src="../img/star.png" /></li>
+                    <li><img class="img"  src="../img/star.png" /></li>
+                    <li><img class="img"  src="../img/star.png" /></li>
+                    <li><img class="img"  src="../img/star.png" /></li>
                 </ul>
-                <p class="comment_content">A wealth of audio knowledge</p>
-                <p class="comment_author">Marcus Brown</p>
+                <p class="comment__content">A wealth of audio knowledge</p>
+                <p class="comment__author">Marcus Brown</p>
             </article>
 
-            <article class="comment">
-                <ul class="comment_rating">
-                    <li><img src="../img/star.png" /></li>
-                    <li><img src="../img/star.png" /></li>
-                    <li><img src="../img/star.png" /></li>
-                    <li><img src="../img/star.png" /></li>
-                    <li><img src="../img/star.png" /></li>
+            <article class="comment article">
+                <ul class="rating ul">
+                    <li><img class="img"  src="../img/star.png" /></li>
+                    <li><img class="img"  src="../img/star.png" /></li>
+                    <li><img class="img"  src="../img/star.png" /></li>
+                    <li><img class="img"  src="../img/star.png" /></li>
+                    <li><img class="img"  src="../img/star.png" /></li>
                 </ul>
-                <p class="comment_content">Every episode is a gem!</p>
-                <p class="comment_author">Marcus Brown</p>
+                <p class="comment__content">Every episode is a gem!</p>
+                <p class="comment__author">Marcus Brown</p>
             </article>
 
-            <article class="comment">
-                <ul class="comment_rating">
-                    <li><img src="../img/star.png" /></li>
-                    <li><img src="../img/star.png" /></li>
-                    <li><img src="../img/star.png" /></li>
-                    <li><img src="../img/star.png" /></li>
-                    <li><img src="../img/star.png" /></li>
+            <article class="comment article">
+                <ul class="rating ul">
+                    <li><img class="img"  src="../img/star.png" /></li>
+                    <li><img class="img"  src="../img/star.png" /></li>
+                    <li><img class="img"  src="../img/star.png" /></li>
+                    <li><img class="img"  src="../img/star.png" /></li>
+                    <li><img class="img"  src="../img/star.png" /></li>
                 </ul>
-                <p class="comment_content">Whoa whoa, let me take some notes!</p>
-                <p class="comment_author">Scott Adams</p>
+                <p class="comment__content">Whoa whoa, let me take some notes!</p>
+                <p class="comment__author">Scott Adams</p>
             </article>
 
-            <article class="comment">
-                <ul class="comment_rating">
-                    <li><img src="../img/star.png" /></li>
-                    <li><img src="../img/star.png" /></li>
-                    <li><img src="../img/star.png" /></li>
-                    <li><img src="../img/star.png" /></li>
-                    <li><img src="../img/star.png" /></li>
+            <article class="comment article">
+                <ul class="rating ul">
+                    <li><img class="img"  src="../img/star.png" /></li>
+                    <li><img class="img"  src="../img/star.png" /></li>
+                    <li><img class="img"  src="../img/star.png" /></li>
+                    <li><img class="img"  src="../img/star.png" /></li>
+                    <li><img class="img"  src="../img/star.png" /></li>
                 </ul>
-                <p class="comment_content">I’ve upped my game considerably since I started listening</p>
-                <p class="comment_author">Steven Blast</p>
+                <p class="comment__content">I’ve upped my game considerably since I started listening</p>
+                <p class="comment__author">Steven Blast</p>
             </article>
         </section>
     </main>
 
     <footer class="footer">
         <div>
-            <img src="../img/footerLogo.png"/>
-            <ul class="social-logos">
-                <li><img src="../img/social_logo1.png"/></li>
-                <li><img src="../img/social_logo2.png"/></li>
-                <li><img src="../img/social_logo3.png"/></li>
+            <img src="../img/footerLogo.png" class="img footer__logo"/>
+            <ul class="footer__social-logos ul">
+                <li><img class="img" src="../img/social_logo1.png"/></li>
+                <li><img class="img" src="../img/social_logo2.png"/></li>
+                <li><img class="img" src="../img/social_logo3.png"/></li>
             </ul>
         </div>
 
-        <nav class="nav-links">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Episodes</a>
-            <a href="">Contact</a>
+        <nav class="footer__links">
+            <a class="a" href="">Home</a>
+            <a class="a" href="">About</a>
+            <a class="a" href="">Episodes</a>
+            <a class="a" href="">Contact</a>
         </nav>
 
-        <nav class="nav-links">
-            <a href="">Style Guide</a>
-            <a href="">Instrucions</a>
-            <a href="">Changelog</a>
-            <a href="">Credit</a>
-            <a href="">Powered by Webflow</a>
-            <a href="">Licenses</a>
+        <nav class="footer__links">
+            <a class="a" href="">Style Guide</a>
+            <a class="a" href="">Instrucions</a>
+            <a class="a" href="">Changelog</a>
+            <a class="a" href="">Credit</a>
+            <a class="a" href="">Powered by Webflow</a>
+            <a class="a" href="">Licenses</a>
         </nav>
 
-        <ul class="listen-on-links">
+        <ul class="listen-on-links ul">
             <li>
-                <a href="">
-                    <img src="../img/logo1.png" />
+                <a class="a" href="">
+                    <img class="img"  src="../img/logo1.png" />
                 </a>
             </li>
             <li>
-                <a href="">
-                    <img src="../img/logo2.png" />
+                <a class="a" href="">
+                    <img class="img" src="../img/logo2.png" />
                 </a>
             </li>
             <li>
-                <a href="">
-                    <img src="../img/logo3.png" />
+                <a class="a" href="">
+                    <img class="img" src="../img/logo3.png" />
                 </a>
             </li>
             <li>
-                <a href="">
-                    <img src="../img/logo4.png" />
+                <a class="a" href="">
+                    <img class="img" src="../img/logo4.png" />
                 </a>
             </li>
             <li>
-                <a href="">
-                    <img src="../img/logo5.png" />
+                <a class="a" href="">
+                    <img class="img" src="../img/logo5.png" />
                 </a>
             </li>
         </ul>
