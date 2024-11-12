@@ -21,11 +21,6 @@ body {
     display: flex;
 }
 
-div {
-    display: block;
-    height: max-content;
-}
-
 .article {
     display: block;
     height: max-content;
@@ -47,13 +42,13 @@ div {
 
 @font-face {
     font-family: "Dm sans";
-    font-weight: normal;
-    src: url("../fonts/DMSans-Medium.ttf");
+    font-weight: 400;
+    src: url("../fonts/DMSans-Regular.ttf");
 }
 
 @font-face {
     font-family: "Dm sans";
-    font-weight: bold;
+    font-weight: 700;
     src: url("../fonts/DMSans-Bold.ttf");
 }
 
@@ -108,6 +103,7 @@ div {
     background-image: url(../img/nextLine.png);
     background-repeat: no-repeat;
     background-position: bottom;
+    font-size: 75px;
 }
 
 .person1__level-word {
@@ -354,7 +350,7 @@ div {
     height: 328px;
 }
 
-footer {
+.footer {
     display: flex;
     justify-content: space-between;
     padding-right: 219px;
